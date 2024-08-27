@@ -379,6 +379,14 @@
     </dependencies>
 
     <build>
+        <!-- for upload artifact to alyun oss shall active by profile -Ptis-repo -->
+        <extensions>
+            <extension>
+                <groupId>com.qlangtech.maven.cloud</groupId>
+                <artifactId>oss-storage-wagon</artifactId>
+                <version>3.0</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -795,6 +803,17 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>${releasesRepository}</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>${snapshotRepository}</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
     <url>https://dolphinscheduler.apache.org</url>
     <mailingLists>
         <mailingList>
@@ -812,6 +831,61 @@
     </scm>
 
     <profiles>
+        <profile>
+            <id>tis-repo</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <releasesRepository>oss://maven.qlangtech.com/release</releasesRepository>
+                <snapshotRepository>oss://maven.qlangtech.com/snapshot</snapshotRepository>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>tis-repo-releases</id>
+                    <url>http://mvn-repo.oss-cn-hangzhou.aliyuncs.com/release/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>tis-repo-snapshots</id>
+                    <url>http://mvn-repo.oss-cn-hangzhou.aliyuncs.com/snapshot/</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>tis-plugin-repo-releases</id>
+                    <url>http://mvn-repo.oss-cn-hangzhou.aliyuncs.com/release/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>tis-plugin-repo-snapshots</id>
+                    <url>http://mvn-repo.oss-cn-hangzhou.aliyuncs.com/snapshot/</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
         <profile>
             <id>docker</id>
             <properties>
