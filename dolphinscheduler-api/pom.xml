@@ -65,25 +65,25 @@
             <artifactId>dolphinscheduler-data-quality</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-datasource-all</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-datasource-all</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-task-all</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-task-all</artifactId>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-ui</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-registry-all</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-ui</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-registry-all</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.dolphinscheduler</groupId>
             <artifactId>dolphinscheduler-scheduler-all</artifactId>

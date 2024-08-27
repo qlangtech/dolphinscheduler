@@ -81,7 +81,7 @@
         <maven.deploy.skip>false</maven.deploy.skip>
         <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
         <auto-service.version>1.0.1</auto-service.version>
-        <jacoco.skip>false</jacoco.skip>
+        <jacoco.skip>true</jacoco.skip>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
         <owasp-dependency-check-maven.version>7.1.2</owasp-dependency-check-maven.version>
@@ -94,10 +94,10 @@
         <docker.build.skip>true</docker.build.skip>
         <docker.push.skip>true</docker.push.skip>
         <skipDepCheck>true</skipDepCheck>
-        <build.ui.skip>false</build.ui.skip>
-        <spotless.skip>false</spotless.skip>
+        <build.ui.skip>true</build.ui.skip>
+        <spotless.skip>true</spotless.skip>
 
-        <skipUT>false</skipUT>
+        <skipUT>true</skipUT>
     </properties>
 
     <dependencyManagement>

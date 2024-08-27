@@ -32,23 +32,23 @@
             <version>${project.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-dao-h2</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-dao-h2</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-dao-postgresql</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-dao-postgresql</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.dolphinscheduler</groupId>
-            <artifactId>dolphinscheduler-dao-mysql</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dolphinscheduler</groupId>-->
+<!--            <artifactId>dolphinscheduler-dao-mysql</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 
