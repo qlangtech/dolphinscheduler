@@ -622,38 +622,38 @@
             </plugin>
 
             <!-- jenkins plugin jacoco report-->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
-                <configuration>
-                    <skip>${jacoco.skip}</skip>
-                    <dataFile>${project.build.directory}/jacoco.exec</dataFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>default-instrument</id>
-                        <goals>
-                            <goal>instrument</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>default-restore-instrumented-classes</id>
-                        <goals>
-                            <goal>restore-instrumented-classes</goal>
-                        </goals>
-                        <configuration>
-                            <excludes>com/github/dreamhead/moco/*</excludes>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>default-report</id>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.jacoco</groupId>-->
+<!--                <artifactId>jacoco-maven-plugin</artifactId>-->
+<!--                <version>${jacoco.version}</version>-->
+<!--                <configuration>-->
+<!--                    <skip>${jacoco.skip}</skip>-->
+<!--                    <dataFile>${project.build.directory}/jacoco.exec</dataFile>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default-instrument</id>-->
+<!--                        <goals>-->
+<!--                            <goal>instrument</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>default-restore-instrumented-classes</id>-->
+<!--                        <goals>-->
+<!--                            <goal>restore-instrumented-classes</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <excludes>com/github/dreamhead/moco/*</excludes>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>default-report</id>-->
+<!--                        <goals>-->
+<!--                            <goal>report</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
