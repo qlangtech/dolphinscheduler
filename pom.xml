@@ -384,7 +384,7 @@
             <extension>
                 <groupId>com.qlangtech.maven.cloud</groupId>
                 <artifactId>oss-storage-wagon</artifactId>
-                <version>3.0</version>
+                <version>4.2.0</version>
             </extension>
         </extensions>
         <pluginManagement>
